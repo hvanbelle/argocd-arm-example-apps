@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: nfs-test
+spec:
+  capacity:
+    storage: 200Gi
+  accessModes:
+    - ReadWriteMany
+  nfs:
+    server: linux-od1.home.arpa
+    path: "/gv0/nfs-test"
+  mountOptions:
+    - nfsvers=4
