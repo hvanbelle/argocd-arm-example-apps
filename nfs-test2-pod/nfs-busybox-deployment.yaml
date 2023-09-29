@@ -28,6 +28,6 @@ spec:
             - name: nfs-test2
               mountPath: "/mnt"
       volumes:
-        - name: nfs-test
+        - name: nfs-test2
           persistentVolumeClaim:
             claimName: nfs-test2
