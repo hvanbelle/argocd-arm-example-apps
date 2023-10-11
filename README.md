@@ -1,2 +1,3 @@
-# argocd-arm-example-apps
+# Argocd-arm-example-apps
+
 argocd arm example apps
