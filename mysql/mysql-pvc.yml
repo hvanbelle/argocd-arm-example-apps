@@ -6,8 +6,9 @@ metadata:
   namespace: mysql-server
 spec:
   accessModes:
-    - ReadWriteOnce
-  storageClassName: local-path
+    - ReadWriteMany
+  storageClassName: ""
   resources:
     requests:
       storage: 5Gi
+  volumeName: mysql-pv
