@@ -55,7 +55,7 @@ spec:
   rules:
     - http:
         paths:
-          - path: /test
+          - path: /whoami
             pathType: Prefix
             backend:
               service:
