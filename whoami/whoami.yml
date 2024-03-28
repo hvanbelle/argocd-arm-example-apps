@@ -53,7 +53,8 @@ metadata:
     traefik.ingress.kubernetes.io/router.entrypoints: web
 spec:
   rules:
-    - http:
+    - host: k3s-test.cube.homer.arpa
+      http:
         paths:
           - path: /whoami
             pathType: Prefix
